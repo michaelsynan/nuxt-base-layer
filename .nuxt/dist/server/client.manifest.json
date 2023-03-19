@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "/home/mikey/git/layertest/base/node_modules/nuxt/dist/app/entry.mjs": {
+  "/home/mikey/git/baselayer/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "/home/mikey/git/layertest/base/node_modules/nuxt/dist/app/entry.mjs"
+    "file": "/home/mikey/git/baselayer/node_modules/nuxt/dist/app/entry.js"
   }
 }

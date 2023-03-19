@@ -1,8 +1,8 @@
 
-import { defuFn } from '/home/mikey/git/layertest/base/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/home/mikey/git/baselayer/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 
 
 
-export default defuFn(inlineConfig)
+export default /* #__PURE__ */ defuFn(inlineConfig)

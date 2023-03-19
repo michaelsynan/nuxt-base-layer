@@ -1,9 +1,9 @@
 {
-  "_hash": "X5fx6JDlZX",
+  "_hash": "UTEVPnV931",
   "project": {
-    "rootDir": "/home/mikey/git/layertest/base"
+    "rootDir": "/home/mikey/git/baselayer"
   },
   "versions": {
-    "nuxt": "3.2.2"
+    "nuxt": "3.3.1"
   }
 }
