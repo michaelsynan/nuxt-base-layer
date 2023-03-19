@@ -2,7 +2,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Btn': typeof import("../components/btn.vue")['default']
-    'Helloworld': typeof import("../components/helloworld.vue")['default']
     'Navbar': typeof import("../components/navbar.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -23,7 +22,6 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyBtn': typeof import("../components/btn.vue")['default']
-    'LazyHelloworld': typeof import("../components/helloworld.vue")['default']
     'LazyNavbar': typeof import("../components/navbar.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -47,7 +45,6 @@ declare module 'vue' {
 }
 
 export const Btn: typeof import("../components/btn.vue")['default']
-export const Helloworld: typeof import("../components/helloworld.vue")['default']
 export const Navbar: typeof import("../components/navbar.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -68,7 +65,6 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyBtn: typeof import("../components/btn.vue")['default']
-export const LazyHelloworld: typeof import("../components/helloworld.vue")['default']
 export const LazyNavbar: typeof import("../components/navbar.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
