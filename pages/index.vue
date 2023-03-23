@@ -1,6 +1,10 @@
-<template>  
-    <div class="container mx-auto px-4">
-        <navbar />
-        <btn />
+<template>
+    <div class="flex flex-col min-h-screen">
+      <div class="flex-grow">
+        <theNavbar />
+        <theHero3 />
+      </div>
+      <theFooter />
     </div>
-</template>
+  </template>
+  
