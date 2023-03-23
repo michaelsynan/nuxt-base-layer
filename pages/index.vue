@@ -1,10 +1,11 @@
 <template>
     <div class="flex flex-col min-h-screen">
       <div class="flex-grow">
-        <theNavbar />
-        <theHero3 />
+        <theNavbar bg-color="bg-blue-500" />
+        <theHero4 />
+        <theContactForm />
       </div>
-      <theFooter />
+      <theFooter bg-color="bg-red-500" />
     </div>
   </template>
   
