@@ -1,6 +1,6 @@
 # Nuxt 3 Base Layer 🌈
 
-> Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers).
+> Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers). Uses nuxt.config extends key.
 
 ## Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo ✨
 
