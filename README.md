@@ -1,42 +1,12 @@
-# Nuxt 3 Layer
+# Nuxt 3 Base Layer 🌈
 
 > Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers).
 
-## Setup
+## Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo ✨
 
-Make sure to install the dependencies:
+## Usage
 
-```bash
-# yarn
-yarn install
+1. Clone repo
+2. Add to parent repo extends key
+3. Customize and use components in `/components` directory in your parent project. 
 
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
