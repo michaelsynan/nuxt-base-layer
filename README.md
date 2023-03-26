@@ -1,3 +1,6 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/michaelsynan/nuxt-base-layer)
+![License: MOZ 2.0](https://img.shields.io/badge/license-MLP%202.0-green)
+
 # Nuxt 3 Base Layer 🌈
 
 > Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers). Uses nuxt.config extends key.
