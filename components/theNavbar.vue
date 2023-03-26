@@ -1,5 +1,6 @@
 <template>
-  <nav id="navbar" :class="['w-full', 'text-white', 'py-4', 'px-4', 'md:px-20', bgColorClass]">    <div class="container mx-auto flex flex-wrap justify-between items-center">
+  <nav id="navbar" :class="['w-full', 'text-white', 'py-4', 'px-4', 'md:px-20', bgColorClass]">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
       <div class="w-1/2 md:w-auto text-left mb-4 md:mb-0 text-sm">LOGO</div>
       <div class="hidden md:flex text-center md:text-left mb-4 md:mb-0 space-x-4">
         <nuxt-link to="#" class="hover:bg-gray-800 p-2">Home</nuxt-link>

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
     body {
         @apply bg-stone-900 text-stone-100;
     }
