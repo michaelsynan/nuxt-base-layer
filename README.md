@@ -10,3 +10,9 @@
 2. Add to parent repo extends key
 3. Customize and use components in `/components` directory in your parent project. 
 
+## To-do
+- [ ] Create theme in `tailwind.config.js`
+  - [ ] Primary and secondary color
+- [ ] Add default styles to Tailwind `@layer base`
+- [ ] Clean up components
+- [ ] Document available props
