@@ -8,6 +8,7 @@
       <aboutSection image-src="https://picsum.photos/seed/picsum/200/200" image-alt="Alt text for image"
         header="Header text" body="Body text" />
     </div>
+    <fixedSlides />
     <theFooter bg-color="bg-purple-900" />
   </div>
 </template>

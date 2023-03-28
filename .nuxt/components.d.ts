@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'AboutSection': typeof import("../components/aboutSection.vue")['default']
     'Btn': typeof import("../components/btn.vue")['default']
+    'FixedSlides': typeof import("../components/fixedSlides.vue")['default']
     'Justemail': typeof import("../components/justemail.vue")['default']
     'TeamMember': typeof import("../components/teamMember.vue")['default']
     'TeamMembers': typeof import("../components/teamMembers.vue")['default']
@@ -34,6 +35,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyAboutSection': typeof import("../components/aboutSection.vue")['default']
     'LazyBtn': typeof import("../components/btn.vue")['default']
+    'LazyFixedSlides': typeof import("../components/fixedSlides.vue")['default']
     'LazyJustemail': typeof import("../components/justemail.vue")['default']
     'LazyTeamMember': typeof import("../components/teamMember.vue")['default']
     'LazyTeamMembers': typeof import("../components/teamMembers.vue")['default']
@@ -68,6 +70,7 @@ declare module 'vue' {
 
 export const AboutSection: typeof import("../components/aboutSection.vue")['default']
 export const Btn: typeof import("../components/btn.vue")['default']
+export const FixedSlides: typeof import("../components/fixedSlides.vue")['default']
 export const Justemail: typeof import("../components/justemail.vue")['default']
 export const TeamMember: typeof import("../components/teamMember.vue")['default']
 export const TeamMembers: typeof import("../components/teamMembers.vue")['default']
@@ -99,6 +102,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyAboutSection: typeof import("../components/aboutSection.vue")['default']
 export const LazyBtn: typeof import("../components/btn.vue")['default']
+export const LazyFixedSlides: typeof import("../components/fixedSlides.vue")['default']
 export const LazyJustemail: typeof import("../components/justemail.vue")['default']
 export const LazyTeamMember: typeof import("../components/teamMember.vue")['default']
 export const LazyTeamMembers: typeof import("../components/teamMembers.vue")['default']
