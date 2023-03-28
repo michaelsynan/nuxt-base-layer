@@ -6,6 +6,8 @@
         helperText: 'text-gray-500',
         linkText: 'text-blue-500',
         backgroundColor: 'bg-gray-100',
-        buttonRadius: 'rounded-md'
+        buttonRadius: 'rounded-md',
+        primaryButtonType: 'default',
+        secondaryButtonType: 'default'
       };
     
