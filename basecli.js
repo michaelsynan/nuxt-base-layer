@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const { Command } = require('commander');
 const fs = require('fs');
 const path = require('path');
@@ -25,9 +23,21 @@ program
     const filePath = path.join(process.cwd(), cmd.output);
     const data = `
       module.exports = {
-        primaryColor: '${cmd.primaryBg} ${cmd.primaryText}',
-        secondaryColor: '${cmd.secondaryBg} ${cmd.secondaryText}',
-        accentColor: '${cmd.accentBg} ${cmd.accentText}',
+        primaryColor: {
+          bg: '${cmd.primaryBg}',
+          text: '${cmd.primaryText}',
+          textFaded: '${cmd.primaryText.replace('text-', 'text-opacity-25 ')}'
+        },
+        secondaryColor: {
+          bg: '${cmd.secondaryBg}',
+          text: '${cmd.secondaryText}',
+          textFaded: '${cmd.secondaryText.replace('text-', 'text-opacity-25 ')}'
+        },
+        accentColor: {
+          bg: '${cmd.accentBg}',
+          text: '${cmd.accentText}',
+          textFaded: '${cmd.accentText.replace('text-', 'text-opacity-25 ')}'
+        },
         helperText: '${cmd.helper}',
         linkText: '${cmd.link}',
         backgroundColor: '${cmd.background}',
@@ -45,7 +55,7 @@ program
     }
   });
 
-program
+  program
   .command('update')
   .description('Update the default Tailwind config file')
   .action(async () => {
@@ -66,7 +76,7 @@ program
         case 'hard-shadow':
           primaryButtonStyles = 'text-white bg-blue-500 hover:shadow-md active:shadow-lg';
           break;
-default:
+        default:
           primaryButtonStyles = 'text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700';
           break;
       }
@@ -74,7 +84,7 @@ default:
       let secondaryButtonStyles;
       switch (basecliConfig.secondaryButtonType) {
         case 'flat':
-          secondaryButtonStyles = 'text-blue-500 bg-white hover:bg-gray-100 active:bg-gray-200';
+          secondaryButtonStyles = 'text-white bg-gray-500 hover:bg-gray-600 active:bg-gray-700';
           break;
         case 'ghost':
           secondaryButtonStyles = 'text-gray-500 hover:bg-gray-100 active:bg-gray-200';
@@ -83,38 +93,80 @@ default:
           secondaryButtonStyles = 'text-white bg-gray-500 hover:shadow-md active:shadow-lg';
           break;
         default:
-          secondaryButtonStyles = 'text-blue-500 bg-white hover:bg-gray-100 active:bg-gray-200';
+          secondaryButtonStyles = 'text-white bg-gray-500 hover:bg-gray-600 active:bg-gray-700';
           break;
       }
 
-      const tailwindConfig = {
+      const generatedConfig = {
         theme: {
           extend: {
             colors: {
-              primary: basecliConfig.primaryColor,
-              secondary: basecliConfig.secondaryColor,
-              accent: basecliConfig.accentColor,
-              background: basecliConfig.backgroundColor,
-              helper: basecliConfig.helperText,
-              link: basecliConfig.linkText
+              primary: {
+                DEFAULT: basecliConfig.primaryColor.bg,
+                text: basecliConfig.primaryColor.text,
+                faded: basecliConfig.primaryColor.textFaded,
+              },
+              secondary: {
+                DEFAULT: basecliConfig.secondaryColor.bg,
+                text: basecliConfig.secondaryColor.text,
+                faded: basecliConfig.secondaryColor.textFaded,
+              },
+              accent: {
+                DEFAULT: basecliConfig.accentColor.bg,
+                text: basecliConfig.accentColor.text,
+                faded: basecliConfig.accentColor.textFaded,
+              },
+              background: {
+                DEFAULT: basecliConfig.backgroundColor,
+                text: basecliConfig.backgroundColor,
+                faded: basecliConfig.backgroundColor,
+              },
+              helper: {
+                DEFAULT: basecliConfig.helperText,
+                text: basecliConfig.helperText,
+                faded: basecliConfig.helperText,
+              },
+              link: {
+                DEFAULT: basecliConfig.linkText,
+                text: basecliConfig.linkText,
+                faded: basecliConfig.linkText,
+              },
+              borderRadius: {
+                custom: basecliConfig.buttonRadius,
+              },
+              button: {
+                primary: primaryButtonStyles,
+                secondary: secondaryButtonStyles,
+              },
             },
-            borderRadius: {
-              custom: basecliConfig.buttonRadius
-            },
-            button: {
-              primary: primaryButtonStyles,
-              secondary: secondaryButtonStyles
-            }
-          }
-        }
+          },
+        },
+        plugins: [],
       };
-
-      await fs.promises.writeFile(tailwindConfigPath, `module.exports = ${JSON.stringify(tailwindConfig, null, 2)}`);
-
-      console.log(`Tailwind config file updated at ${tailwindConfigPath}`);
-    } catch (error) {
-      console.error('Error updating Tailwind config file:', error);
-    }
-  });
-
-program.parse(process.argv);
+      try {
+        const currentTailwindConfig = require(tailwindConfigPath);
+        const newTailwindConfig = {
+          ...currentTailwindConfig,
+          theme: {
+            ...currentTailwindConfig.theme,
+            extend: {
+              ...currentTailwindConfig.theme.extend,
+              ...generatedConfig.theme.extend,
+            },
+          },
+        };
+      
+        await fs.promises.writeFile(tailwindConfigPath, `module.exports = ${JSON.stringify(newTailwindConfig, null, 2)}`, 'utf-8');
+        console.log('Tailwind config file updated successfully!');
+      } catch (error) {
+        console.error('Error updating Tailwind config file:', error);
+      }
+      } catch (error) {
+        console.error('Error reading config files:', error);
+      }
+      
+      });
+      
+      program.parse(process.argv);
+      
+      

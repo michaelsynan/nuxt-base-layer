@@ -1,8 +1,20 @@
 
       module.exports = {
-        primaryColor: 'bg-blue-500 text-white',
-        secondaryColor: 'bg-gray-500 text-white',
-        accentColor: 'bg-green-500 text-white',
+        primaryColor: {
+          bg: 'bg-blue-500',
+          text: 'text-white',
+          textFaded: 'text-opacity-25 white'
+        },
+        secondaryColor: {
+          bg: 'bg-gray-500',
+          text: 'text-white',
+          textFaded: 'text-opacity-25 white'
+        },
+        accentColor: {
+          bg: 'bg-green-500',
+          text: 'text-white',
+          textFaded: 'text-opacity-25 white'
+        },
         helperText: 'text-gray-500',
         linkText: 'text-blue-500',
         backgroundColor: 'bg-gray-100',
