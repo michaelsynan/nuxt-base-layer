@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-h-screen">
     <div class="flex-grow">
-      <theNavbar bg-color="bg-purple-900" />
+      <theNavbar bg-color="bg-primary" />
       <TheHero5 />
       <theContactForm />
       <teamMembers />
@@ -9,7 +9,7 @@
         header="Header text" body="Body text" />
     </div>
     <fixedSlides />
-    <theFooter bg-color="bg-purple-900" />
+    <theFooter bg-color="bg-primary" />
   </div>
 </template>
   

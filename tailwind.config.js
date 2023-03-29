@@ -1,10 +1,16 @@
 module.exports = {
-  "content": [],
+  "content": [
+        "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
   "theme": {
     "extend": {
       "colors": {
         "primary": {
-          "DEFAULT": "bg-blue-500",
+          "DEFAULT": "#3b82f6",
           "text": "text-white",
           "faded": "text-opacity-25 white"
         },
