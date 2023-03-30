@@ -12,4 +12,3 @@
     <theFooter bg-color="bg-primary" />
   </div>
 </template>
-  

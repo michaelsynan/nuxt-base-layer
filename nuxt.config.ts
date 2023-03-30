@@ -1,9 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    modules: ["@nuxtjs/tailwindcss"],
     css: ['~/assets/css/main.css'],
-  hooks: {
-    'nuxt tailwindcss:config'(tailwindConfig) {
-      tailwindConfig.theme = {
+    tailwindcss: {
+      config: {
+        theme: {
         extend: {
           colors: {
             primary: {
@@ -45,9 +46,9 @@ export default defineNuxtConfig({
             },
           },
         },
-      };
+      },
     },
-  },
+      },
     postcss: {
         plugins: {
           tailwindcss: {},
