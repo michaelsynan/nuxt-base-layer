@@ -5,7 +5,9 @@
 
 > Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers). Uses nuxt.config extends key.
 
-## Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo ✨
+⚠️ **This repo is still very much under development but, ultimately, it aims to provide a themable component library for Nuxt** ⚠️ 
+
+Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo ✨
 
 ## Usage
 
@@ -14,8 +16,7 @@
 3. Customize and use components in `/components` directory in your parent project. 
 
 ## To-do
-- [ ] Create theme in `tailwind.config.js`
-  - [ ] Primary and secondary color
+- [x] Create theme in `tailwind.config.js`
 - [ ] Add default styles to Tailwind `@layer base`
 - [ ] Clean up components
 - [ ] Document available props
