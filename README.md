@@ -2,12 +2,14 @@
 ![License: MOZ 2.0](https://img.shields.io/badge/license-MLP%202.0-green)
 
 # Nuxt 3 Base Layer 🌈
+A themable component library for Nuxt.
+<br />
 
-> Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers). Uses nuxt.config extends key.
+### ⚠️ **This repo is still very much under development** ⚠️ 
 
-⚠️ **This repo is still very much under development but, ultimately, it aims to provide a themable component library for Nuxt** ⚠️ 
-
+<br />
 Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo ✨
+> Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers). Uses nuxt.config extends key.
 
 ## Usage
 
