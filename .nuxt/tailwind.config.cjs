@@ -295,17 +295,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -725,17 +725,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -1110,17 +1110,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -1523,17 +1523,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -1866,17 +1866,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -2196,17 +2196,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -2605,17 +2605,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -2982,17 +2982,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -3555,17 +3555,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -4375,17 +4375,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -4756,17 +4756,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -5104,17 +5104,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -5434,17 +5434,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -5995,17 +5995,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -6332,17 +6332,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
@@ -6662,17 +6662,17 @@ module.exports = {
       "primary": {
         "DEFAULT": "#3B82F6",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#92B4FD"
       },
       "secondary": {
         "DEFAULT": "#9CA3AF",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#C4C9D4"
       },
       "accent": {
         "DEFAULT": "#10B981",
         "text": "#FFFFFF",
-        "faded": "rgba(255, 255, 255, 0.25)"
+        "faded": "#6FD4B4"
       },
       "background": {
         "DEFAULT": "#F3F4F6",
