@@ -2,3 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/*! purgecss start ignore */
+@layer base {
+
+    h1 {
+        @apply text-2xl font-bold md:text-4xl pb-4 pt-2;
+    }
+
+    h2 {
+        @apply text-xl font-bold md:text-3xl py-2;
+    }
+
+    h3 {
+        @apply text-lg font-bold md:text-2xl py-1;
+    }
+
+    h4 {
+        @apply text-base font-bold md:text-lg py-1;
+    }
+
+    body {
+        @apply text-sm md:text-base;
+    }
+
+    a {
+        @apply border-b border-dotted hover:border-solid hover:border-b-2
+    }
+
+    ul {
+        @apply list-disc;
+    }
+
+    li {
+        @apply list-outside ml-4 pl-1;
+    }
+
+}
+/*! purgecss start ignore */
