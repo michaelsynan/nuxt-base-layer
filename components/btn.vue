@@ -1,7 +1,8 @@
 <template>
   <button :class="buttonClass">
-    <slot></slot>
-    <p>Click Me</p>
+    <slot>
+      <p>See More</p>
+    </slot>
   </button>
 </template>
 
