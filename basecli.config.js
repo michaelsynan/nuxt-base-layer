@@ -1,23 +1,23 @@
 
       module.exports = {
         primaryColor: {
-          bg: '#3B82F6',
-          text: '#FFFFFF',
-          textFaded: 'rgba(255, 255, 255, 0.25)',
+          bg: '#5b7e74',
+          text: 'text-white',
+          textFaded: 'text-opacity-25 white'
         },
         secondaryColor: {
-          bg: '#9CA3AF',
-          text: '#FFFFFF',
-          textFaded: 'rgba(255, 255, 255, 0.25)',
+          bg: 'bg-gray-500',
+          text: 'text-white',
+          textFaded: 'text-opacity-25 white'
         },
         accentColor: {
-          bg: '#10B981',
-          text: '#FFFFFF',
-          textFaded: 'rgba(255, 255, 255, 0.25)',
+          bg: 'bg-green-500',
+          text: 'text-white',
+          textFaded: 'text-opacity-25 white'
         },
-        helperText: '#6B7280',
-        linkText: '#3B82F6',
-        backgroundColor: '#F3F4F6',
+        helperText: 'text-gray-500',
+        linkText: 'text-blue-500',
+        backgroundColor: 'bg-gray-100',
         buttonRadius: 'rounded-md',
         primaryButtonType: 'default',
         secondaryButtonType: 'default'

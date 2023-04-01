@@ -3,6 +3,30 @@ const fs = require('fs');
 const path = require('path');
 const program = new Command();
 
+
+function parsePaletteOutput(output) {
+  const lines = output.trim().split('\n');
+  const colors = {};
+  lines.forEach((line) => {
+    const [label, color] = line.split(':').map((s) => s.trim());
+    colors[label.toLowerCase()] = color;
+  });
+  return colors;
+}
+
+async function getPaletteColors() {
+  const { promisify } = require('util');
+  const exec = promisify(require('child_process').exec);
+
+  try {
+    const { stdout } = await exec('bash generate_palette.sh');
+    return parsePaletteOutput(stdout);
+  } catch (error) {
+    console.error('Error running generate_palette.sh:', error);
+    return null;
+  }
+}
+
 program
   .command('init')
   .description('Initialize the config file')
@@ -20,6 +44,16 @@ program
   .option('-pb, --primary-button <type>', 'Specify primary button type: default, flat, ghost, hard-shadow', 'default')
   .option('-sb, --secondary-button <type>', 'Specify secondary button type: default, flat, ghost, hard-shadow', 'default')
   .action(async (cmd) => {
+    const paletteColors = await getPaletteColors();
+    if (paletteColors) {
+      cmd.primaryBg = paletteColors.primary || cmd.primaryBg;
+      cmd.secondaryBg = paletteColors.secondarya || cmd.secondaryBg;
+      cmd.accentBg = paletteColors.secondaryb || cmd.accentBg;
+      cmd.helper = paletteColors.secondaryc || cmd.helper;
+      cmd.link = paletteColors.secondaryd || cmd.link;
+    }
+  
+    
     const filePath = path.join(process.cwd(), cmd.output);
     const data = `
       module.exports = {

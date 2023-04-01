@@ -41,7 +41,7 @@ function getButtonStyle(type) {
     case 'flat':
       return 'bg-primary text-gray-700 hover:bg-primary-faded';
     case 'raised':
-      return 'bg-secondary text-white shadow-md hover:bg-secondary-faded';
+      return 'bg-secondary text-white shadow-md hover:bg-sesecondary-faded';
     case 'ghost':
       return 'bg-transparent text-gray-700 border-gray-700 border-2 hover-ghost';
     case 'hard-shadow':
