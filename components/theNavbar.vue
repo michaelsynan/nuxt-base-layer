@@ -10,7 +10,13 @@
       </div>
       <div class="w-1/2 md:w-auto text-right md:text-left">
         <button class="md:hidden text-white text-2xl focus:outline-none" @click="toggleMenu()">
-          <i class="material-icons">{{ isMenuOpen ? 'close' : 'menu' }}</i>
+          <i-mdi-github style="color: white"
+          class="text-xl md:text-2xl  inline">
+            
+            
+            
+            {{ isMenuOpen ? 'close' : 'menu' }}</i-mdi-github>
+      
         </button>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
 import { provider, isWindows } from 'file:///home/mikey/git/baselayer/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///home/mikey/git/baselayer/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///home/mikey/git/baselayer/node_modules/h3/dist/index.mjs';
 import { createRenderer } from 'file:///home/mikey/git/baselayer/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import devalue from 'file:///home/mikey/git/baselayer/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { renderToString } from 'file:///home/mikey/git/baselayer/node_modules/vue/server-renderer/index.mjs';
@@ -407,12 +407,7 @@ function defineRenderHandler(handler) {
       for (const header in response.headers) {
         event.node.res.setHeader(header, response.headers[header]);
       }
-      if (response.statusCode) {
-        event.node.res.statusCode = response.statusCode;
-      }
-      if (response.statusMessage) {
-        event.node.res.statusMessage = response.statusMessage;
-      }
+      setResponseStatus(event, response.statusCode, response.statusMessage);
     }
     return typeof response.body === "string" ? response.body : JSON.stringify(response.body);
   });
@@ -455,10 +450,7 @@ const errorHandler = (async function errorhandler(error, event) {
     stack: statusCode !== 404 ? `<pre>${stack.map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n")}</pre>` : "",
     data: error.data
   };
-  event.node.res.statusCode = errorObject.statusCode !== 200 && errorObject.statusCode || 500;
-  if (errorObject.statusMessage) {
-    event.node.res.statusMessage = errorObject.statusMessage;
-  }
+  setResponseStatus(event, errorObject.statusCode !== 200 && errorObject.statusCode || 500, errorObject.statusMessage);
   if (error.unhandled || error.fatal) {
     const tags = [
       "[nuxt]",
@@ -470,7 +462,7 @@ const errorHandler = (async function errorhandler(error, event) {
     console.error(tags, errorObject.message + "\n" + stack.map((l) => "  " + l.text).join("  \n"));
   }
   if (isJsonRequest(event)) {
-    event.node.res.setHeader("Content-Type", "application/json");
+    setResponseHeader(event, "Content-Type", "application/json");
     event.node.res.end(JSON.stringify(errorObject));
     return;
   }
@@ -484,19 +476,14 @@ const errorHandler = (async function errorhandler(error, event) {
     {
       errorObject.description = errorObject.message;
     }
-    event.node.res.setHeader("Content-Type", "text/html;charset=UTF-8");
+    setResponseHeader(event, "Content-Type", "text/html;charset=UTF-8");
     event.node.res.end(template(errorObject));
     return;
   }
   for (const [header, value] of res.headers.entries()) {
     setResponseHeader(event, header, value);
   }
-  if (res.status && res.status !== 200) {
-    event.node.res.statusCode = res.status;
-  }
-  if (res.statusText) {
-    event.node.res.statusMessage = res.statusText;
-  }
+  setResponseStatus(event, res.status && res.status !== 200 ? res.status : void 0, res.statusText);
   event.node.res.end(await res.text());
 });
 

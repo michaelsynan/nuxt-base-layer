@@ -1,6 +1,11 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Components from 'unplugin-vue-components/vite'
+
 export default defineNuxtConfig({
-    modules: ["@nuxtjs/tailwindcss"],
+    modules: ["@nuxtjs/tailwindcss",
+    ['unplugin-icons/nuxt', { autoInstall: true }]
+  ],
     css: ['~/assets/css/main.css'],
     tailwindcss: {
       config: {
@@ -49,10 +54,18 @@ export default defineNuxtConfig({
       },
     },
       },
+      vite: {
+        plugins: [
+            Components({
+                resolvers: IconsResolver(),
+            }),
+            Icons(),
+        ]
+    },
     postcss: {
         plugins: {
           tailwindcss: {},
           autoprefixer: {},
         },
-      },
+      }, 
 })
