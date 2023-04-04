@@ -293,41 +293,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       },
       "auto": "auto"
     },
@@ -723,41 +701,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "backgroundImage": {
@@ -1108,41 +1064,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       },
       "DEFAULT": "#e5e7eb"
     },
@@ -1521,41 +1455,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "brightness": {
@@ -1864,41 +1776,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "colors": {
@@ -2194,41 +2084,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "columns": {
@@ -2603,41 +2471,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       },
       "DEFAULT": "#e5e7eb"
     },
@@ -2980,41 +2826,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "flex": {
@@ -3553,41 +3377,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "gradientColorStopPositions": {
@@ -4373,41 +4175,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "outlineOffset": {
@@ -4754,41 +4534,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "placeholderOpacity": {
@@ -5102,41 +4860,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "ringOffsetColor": {
@@ -5432,41 +5168,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "ringOffsetWidth": {
@@ -5993,41 +5707,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "strokeWidth": {
@@ -6330,41 +6022,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "textDecorationColor": {
@@ -6660,41 +6330,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6",
-        "text": "#FFFFFF",
-        "faded": "#92B4FD"
+        "DEFAULT": "#3B82F6"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF",
-        "text": "#FFFFFF",
-        "faded": "#C4C9D4"
+        "DEFAULT": "#9CA3AF"
       },
-      "accent": {
-        "DEFAULT": "#10B981",
-        "text": "#FFFFFF",
-        "faded": "#6FD4B4"
+      "tertiary": {
+        "DEFAULT": "#10B981"
       },
-      "background": {
-        "DEFAULT": "#F3F4F6",
-        "text": "#F3F4F6",
-        "faded": "#F3F4F6"
+      "dark": {
+        "DEFAULT": "#F3F4F6"
       },
-      "helper": {
-        "DEFAULT": "#6B7280",
-        "text": "#6B7280",
-        "faded": "#6B7280"
-      },
-      "link": {
-        "DEFAULT": "#3B82F6",
-        "text": "#3B82F6",
-        "faded": "#3B82F6"
-      },
-      "borderRadius": {
-        "custom": "rounded-md"
-      },
-      "button": {
-        "primary": "text-white bg-#3B82F6 hover:bg-#3B82F6 active:bg-#3B82F6",
-        "secondary": "text-white bg-#9CA3AF hover:bg-#9CA3AF active:bg-#9CA3AF"
+      "light": {
+        "DEFAULT": "#6B7280"
       }
     },
     "textDecorationThickness": {
