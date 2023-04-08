@@ -1,15 +1,14 @@
 <template>
   <div class="relative inline-block">
-    <button @click="toggleDropdown" class="bg-blue-500 text-white flex items-center px-4 py-2 rounded">
+    <button @click="toggleDropdown" class="bg-blue-500 text-white flex items-center px-4 py-2">
       Dropdown
       <span class="ml-2">
-        <i-mdi-arrow-up v-if="!isOpen" class="fas fa-chevron-down" />
-        <i-mdi-arrow-down v-else class="fas fa-chevron-up" />
+        <i-mdi-chevron-up :class="isOpen ? 'rotate-180' : 'rotate-0'" class="fas fa-chevron-down" />
       </span>
     </button>
     <div
       v-show="isOpen"
-      class="absolute left-0 mt-2 bg-white border border-gray-300 rounded shadow-lg w-48 z-10"
+      class="absolute left-0 mt-2 bg-white border border-gray-300 shadow-lg w-48 z-10"
       @click.away="closeDropdown"
     >
       <ul class="py-2">
@@ -26,7 +25,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -54,5 +52,19 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
+}
+
+li {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+.rotate-0 {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
 }
 </style>

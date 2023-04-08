@@ -8,8 +8,15 @@
     </div>
     <the-navbar />
     <the-footer />
+    <toast type="success" message="Your changes have been saved." />
     <theDropdown />
-    <justemail />
-    <contactForm />
+    <div class="flex items-center space-x-4 flex-wrap gap-y-4">
+      <div class="flex-none">
+        <justemail />
+      </div>
+      <div class="flex-none">
+        <contactForm />
+      </div>
+    </div>
   </div>
 </template>

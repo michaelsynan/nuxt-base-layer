@@ -17,7 +17,7 @@
         <textarea id="message" v-model="formData.message" rows="4"
           class="w-full p-2 bg-stone-700 text-stone-100 border border-stone-600"></textarea>
       </div>
-<btn />
+<btn>Submit</btn>
     </form>
   </div>
 </template>
