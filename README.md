@@ -20,6 +20,7 @@ Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsyna
 
 ## To-do
 - [x] Create theme in `tailwind.config.js`
+- [ ] Use https://vue-styleguidist.github.io/
 - [ ] Add default styles to Tailwind `@layer base`
 - [ ] Clean up components
 - [ ] Document available props
