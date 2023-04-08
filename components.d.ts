@@ -10,7 +10,13 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     IMaterialSymbolsKeyboardDoubleArrowRightRounded: typeof import('~icons/material-symbols/keyboard-double-arrow-right-rounded')['default']
+    IMdiArrowDown: typeof import('~icons/mdi/arrow-down')['default']
+    IMdiArrowUp: typeof import('~icons/mdi/arrow-up')['default']
+    IMdiClose: typeof import('~icons/mdi/close')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
+    IMdiInstagram: typeof import('~icons/mdi/instagram')['default']
+    IMdiLinkedin: typeof import('~icons/mdi/linkedin')['default']
+    IMdiMenu: typeof import('~icons/mdi/menu')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

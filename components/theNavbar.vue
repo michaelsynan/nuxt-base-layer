@@ -1,36 +1,47 @@
 <template>
   <nav id="navbar" :class="['w-full', 'text-white', 'py-4', 'px-4', 'md:px-20', bgColorClass]">
     <div class="container mx-auto flex flex-wrap justify-between items-center">
-      <div class="w-1/2 md:w-auto text-left mb-4 md:mb-0 text-sm">LOGO</div>
-      <div class="hidden md:flex text-center md:text-left mb-4 md:mb-0 space-x-4">
-        <nuxt-link to="#" class="hover:bg-gray-800 p-2">Home</nuxt-link>
-        <nuxt-link to="#" class="hover:bg-gray-800 p-2">Services</nuxt-link>
-        <nuxt-link to="#" class="hover:bg-gray-800 p-2">Pricing</nuxt-link>
-        <nuxt-link to="#" class="hover:bg-gray-800 p-2">Contact</nuxt-link>
+      <div class="h-full md:w-auto text-left text-sm items-center">
+        <img v-if="logoImage" :src="logoImage" :alt="logoText" class="h-8 md:h-12">
+        <span v-else>{{ logoText }}</span>
       </div>
-      <div class="w-1/2 md:w-auto text-right md:text-left">
-        <button class="md:hidden text-white text-2xl focus:outline-none" @click="toggleMenu()">
-          <i-mdi-github style="color: white"
-          class="text-xl md:text-2xl  inline">
-            
-            
-            
-            {{ isMenuOpen ? 'close' : 'menu' }}</i-mdi-github>
-      
+      <div class="hidden md:flex text-center md:text-left space-x-4">
+        <nuxt-link
+          v-for="link in links"
+          :key="link.text"
+          :to="link.to"
+          class="hover:bg-gray-800 p-2"
+        >
+          {{ link.text }}
+        </nuxt-link>
+      </div>
+      <div class="md:w-auto text-right md:text-left flex justify-end items-center">
+        <button class="md:hidden text-white text-2xl focus:outline-none h-full" @click="toggleMenu()">
+          <div class="flex items-center">
+            <span v-if="isMenuOpen">
+              <i-mdi-close style="color: white" class="text-xl md:text-2xl inline"></i-mdi-close>
+            </span>
+            <span v-else>
+              <i-mdi-menu style="color: white" class="text-xl md:text-2xl inline"></i-mdi-menu>
+            </span>
+          </div>
         </button>
       </div>
     </div>
     <div class="md:hidden" :class="{ 'hidden': !isMenuOpen, 'block': isMenuOpen }">
-      <div class="flex flex-col text-center divide-y divide-gray-800">
-        <nuxt-link to="#" class="py-2">Home</nuxt-link>
-        <nuxt-link to="#" class="py-2">Services</nuxt-link>
-        <nuxt-link to="#" class="py-2">Pricing</nuxt-link>
-        <nuxt-link to="#" class="py-2">Contact</nuxt-link>
+      <div class="flex flex-col text-center">
+        <nuxt-link
+          v-for="link in links"
+          :key="link.text"
+          :to="link.to"
+          class="py-2"
+        >
+          {{ link.text }}
+        </nuxt-link>
       </div>
     </div>
   </nav>
 </template>
-
 
 <script>
 export default {
@@ -42,7 +53,24 @@ export default {
   props: {
     bgColor: {
       type: String,
-      default: 'bg-black bg-opacity-30',
+      default: 'bg-black',
+    },
+    links: {
+      type: Array,
+      default: () => [
+        { text: 'Home', to: '#' },
+        { text: 'Services', to: '#' },
+        { text: 'Pricing', to: '#' },
+        { text: 'Contact', to: '#' },
+      ],
+    },
+    logoText: {
+      type: String,
+      default: 'LOGO',
+    },
+    logoImage: {
+      type: String,
+      default: '',
     },
   },
   computed: {
@@ -57,3 +85,4 @@ export default {
   },
 };
 </script>
+

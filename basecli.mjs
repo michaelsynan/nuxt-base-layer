@@ -1,12 +1,13 @@
 import { Command } from 'commander';
 import fs from 'fs';
 import path from 'path';
-import http from 'https';
+import https from 'https';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 
 const program = new Command();
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 
 
@@ -65,7 +66,7 @@ export async function generatePalette() {
   });
 
   return new Promise((resolve, reject) => {
-    const req = http.request(options, (res) => {
+    const req = https.request(options, (res) => {
       let response = '';
       res.on('data', (chunk) => {
         response += chunk;
