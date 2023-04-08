@@ -10,6 +10,7 @@
     <the-footer />
     <toast type="success" message="Your changes have been saved." />
     <tag />
+    <tagGroup />
     <menuDropdown />
     <theDropdown />
     <div class="flex items-center space-x-4 flex-wrap gap-y-4">
