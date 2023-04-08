@@ -10,7 +10,7 @@
           v-for="link in links"
           :key="link.text"
           :to="link.to"
-          class="hover:bg-gray-800 p-2"
+          class="nav-link p-2"
         >
           {{ link.text }}
         </nuxt-link>
@@ -34,7 +34,7 @@
           v-for="link in links"
           :key="link.text"
           :to="link.to"
-          class="py-2"
+          class="nav-link py-2"
         >
           {{ link.text }}
         </nuxt-link>
@@ -86,3 +86,10 @@ export default {
 };
 </script>
 
+<style>
+.nav-link:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+</style>

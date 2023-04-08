@@ -2,7 +2,7 @@
   <transition name="toast-fade-y">
     <div v-if="visible" :class="[bgClass, textColorClass, 'p-4 shadow-md flex justify-between items-center']">
       <div>{{ message }}</div>
-      <button @click="close" class="text-gray-500 hover:text-gray-700">
+      <button @click="close" class="text-white hover:text-gray-300">
         <i-mdi-close-thick />
       </button>
     </div>
@@ -43,16 +43,7 @@ export default {
       }
     },
     textColorClass() {
-      switch (this.type) {
-        case 'warn':
-          return 'text-yellow-900';
-        case 'error':
-          return 'text-red-900';
-        case 'success':
-          return 'text-green-900';
-        default:
-          return 'text-gray-900';
-      }
+      return 'text-black';
     },
   },
   methods: {

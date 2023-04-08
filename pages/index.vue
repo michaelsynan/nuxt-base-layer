@@ -3,8 +3,6 @@
     <div class="flex-grow">
       <theNavbar bg-color="bg-primary" />
       <TheHero5 />
-      <i-mdi-github style="color: white"
-          class="text-xl md:text-2xl  inline" /> hello hello 
       <theContactForm />
       <teamMembers />
       <aboutSection image-src="https://picsum.photos/seed/picsum/200/200" image-alt="Alt text for image"
