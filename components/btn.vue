@@ -1,5 +1,5 @@
 <template>
-  <button :class="buttonClass">
+  <button :class="buttonClasses" @click="$emit('click')">
     <slot>
       <p class="whitespace-nowrap">See More</p>
     </slot>
@@ -10,22 +10,10 @@
 .hard-shadow {
   box-shadow: 4px 4px 0 #000;
 }
-.hover-flat:hover {
-
-}
-.hover-raised:hover {
-
-}
-.hover-ghost:hover {
-  background-color: #e2e8f0;
-}
-.hover-hard-shadow:hover {
-  background-color: #9f7aea;
-}
 </style>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps, computed } from 'vue';
 
 const props = defineProps({
   type: {
@@ -35,41 +23,48 @@ const props = defineProps({
   size: {
     type: String,
     default: 'base'
-  }
+  },
+  color: {
+    type: String,
+    default: 'tertiary',
+    validator: (value) => ['primary', 'secondary', 'tertiary'].includes(value),
+  },
 });
 
-const buttonClass = `transition-all duration-200 ease-in-out w-auto h-min ${getButtonStyle(props.type)}  ${getButtonSize(props.size)}`;
+const buttonColor = computed(() => `bg-${props.color}`);
+const hoverColor = computed(() => `hover:bg-${props.color}-dark`);
+const buttonClasses = computed(() => {
+  const baseClass = `transition-colors duration-200 ease-in-out w-auto h-min ${getButtonStyle(props.type)} ${getButtonSize(props.size)} ${buttonColor.value}`;
+  const hoverClass = `${hoverColor.value} text-white`;
+
+  return `${baseClass} ${hoverClass}`;
+});
 
 function getButtonStyle(type) {
-
   switch (type) {
     case 'flat':
-      return 'bg-primary text-white text-gray-700';
+      return 'text-gray-700';
     case 'raised':
-      return 'bg-primary text-white shadow-md hover:bg-secondary-faded';
+      return 'text-white shadow-md';
     case 'ghost':
-      return 'bg-transparent text-gray-700 border-gray-700 border-2 hover-ghost';
+      return 'text-gray-700 border-gray-700 border-2 hover-ghost';
     case 'hard-shadow':
-      return 'bg-purple-500 text-white hard-shadow hover-hard-shadow';     
+      return 'text-white hard-shadow hover-hard-shadow';
     default:
       break;
+  }
+}
 
-  }}
-
-  function getButtonSize(size) {
-
+function getButtonSize(size) {
   switch (size) {
     case 'sm':
       return 'px-2 py-1 text-sm';
-    case 'base': 
+    case 'base':
       return 'px-4 py-2';
     case 'lg':
       return 'px-8 py-4 text-lg';
     default:
       break;
-}
-
+  }
 }
 </script>
-
-

@@ -1,14 +1,14 @@
 <!-- components/TagGroup.vue -->
 <template>
   <div class="tag-group">
-    <Tag
+    <baseTag
       v-for="(tag, index) in tagList"
       :key="index"
       :bg-color="tag.bgColor"
       :text-color="tag.textColor"
     >
       {{ tag.text }}
-    </Tag>
+    </baseTag>
   </div>
 </template>
 

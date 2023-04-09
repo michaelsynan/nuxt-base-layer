@@ -51,9 +51,10 @@ export default {
     };
   },
   props: {
-    bgColor: {
+    color: {
       type: String,
-      default: 'bg-black',
+      default: 'primary',
+      validator: (value) => ['primary', 'secondary', 'tertiary'].includes(value),
     },
     links: {
       type: Array,
@@ -75,7 +76,7 @@ export default {
   },
   computed: {
     bgColorClass() {
-      return this.bgColor;
+      return `bg-${this.color}`;
     },
   },
   methods: {
@@ -86,10 +87,6 @@ export default {
 };
 </script>
 
-<style>
-.nav-link:hover {
-  background-color: transparent;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-}
+<style scoped>
+
 </style>

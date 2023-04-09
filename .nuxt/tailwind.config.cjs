@@ -6795,11 +6795,30 @@ module.exports = {
     "extract": {},
     "transform": {}
   },
+  "safelist": [
+    {
+      "pattern": {},
+      "variants": [
+        "hover",
+        "focus",
+        "active",
+        "disabled"
+      ]
+    },
+    {
+      "pattern": {},
+      "variants": [
+        "hover",
+        "focus",
+        "active",
+        "disabled"
+      ]
+    }
+  ],
   "presets": [],
   "darkMode": "media",
   "prefix": "",
   "important": false,
   "separator": ":",
-  "safelist": [],
   "blocklist": []
 }

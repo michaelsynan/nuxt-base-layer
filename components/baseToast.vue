@@ -43,7 +43,7 @@ export default {
       }
     },
     textColorClass() {
-      return 'text-black';
+      return 'text-white';
     },
   },
   methods: {

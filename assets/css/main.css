@@ -37,3 +37,9 @@
 }
 
 /*! purgecss start ignore */
+
+.nav-link:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }

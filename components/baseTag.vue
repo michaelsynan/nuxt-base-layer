@@ -1,6 +1,6 @@
 <!-- components/Tag.vue -->
 <template>
-  <div :class="tagClasses" class="inline-block max-w-min">
+  <div :class="tagClasses" class="inline-block max-w-min cursor-pointer">
     <slot>{{ defaultText }}</slot>
   </div>
 </template>
