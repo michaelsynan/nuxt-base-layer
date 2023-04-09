@@ -1,6 +1,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/michaelsynan/nuxt-base-layer)
 ![License: MOZ 2.0](https://img.shields.io/badge/license-MLP%202.0-green)
 
+**Documentation for now will live at the [wiki](/wiki)**
 # Nuxt 3 Base Layer 🌈
 A themable component library for Nuxt.
 <br />
