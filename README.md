@@ -8,3 +8,4 @@ Documentation can be found on the [wiki](../../wiki).
 
 ## Features
 - Tooling for producing color palette and design tokens
+- Responsive font size classes
