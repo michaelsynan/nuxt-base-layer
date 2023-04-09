@@ -4,31 +4,37 @@ import Components from 'unplugin-vue-components/vite'
 
 export default defineNuxtConfig({
 
+  
+  
+  
   "tailwindcss": {
     "config": {
       "theme": {
         "extend": {
           "colors": {
   "primary": {
-    "light": "#b185ff",
-    "DEFAULT": "#7b57ed",
-    "dark": "#432bba"
+    "light": "#9173a1",
+    "DEFAULT": "#634772",
+    "dark": "#381f46"
   },
   "secondary": {
-    "light": "#ffac84",
-    "DEFAULT": "#ed7b57",
-    "dark": "#b64c2c"
+    "light": "#a19073",
+    "DEFAULT": "#726347",
+    "dark": "#46391f"
   },
   "tertiary": {
-    "light": "#90ffac",
-    "DEFAULT": "#57ed7b",
-    "dark": "#00b94c"
+    "light": "#74a190",
+    "DEFAULT": "#477263",
+    "dark": "#1c4639"
   }
 }
         }
       }
     }
   },
+
+
+
 
   modules: [
     "@nuxtjs/tailwindcss",

@@ -1,6 +1,11 @@
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import chroma from 'chroma-js';
 import yaml from 'js-yaml';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Function to generate a random hex color
 function randomHexColor() {
@@ -41,7 +46,8 @@ const designTokens = {
 
 // Convert the design token object to YAML and save to a file
 const yamlString = yaml.dump(designTokens);
-fs.writeFileSync("design_tokens.yaml", yamlString);
+const parentDir = path.resolve(__dirname, '..');
+const outputFile = path.join(parentDir, 'design_tokens.yaml');
+fs.writeFileSync(outputFile, yamlString);
 
-console.log("Design tokens saved to design_tokens.yaml");
-
+console.log(`Design tokens saved to ${outputFile}`);

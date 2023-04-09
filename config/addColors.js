@@ -1,6 +1,8 @@
 import fs from 'fs';
 import yaml from 'js-yaml';
 import readline from 'readline';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 async function askQuestion(query) {
   const rl = readline.createInterface({
@@ -16,7 +18,17 @@ async function askQuestion(query) {
   );
 }
 
-const designTokens = yaml.load(fs.readFileSync('design_tokens.yaml', 'utf8'));
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const parentDir = path.resolve(currentDir, '..');
+const designTokensPath = path.join(parentDir, 'design_tokens.yaml');
+
+const nuxtConfigJsPath = path.join(parentDir, 'nuxt.config.js');
+const nuxtConfigTsPath = path.join(parentDir, 'nuxt.config.ts');
+
+const nuxtConfigPath =
+  fs.existsSync(nuxtConfigJsPath) ? nuxtConfigJsPath : nuxtConfigTsPath;
+
+const designTokens = yaml.load(fs.readFileSync(designTokensPath, 'utf8'));
 
 const tailwindColors = {
   primary: {
@@ -49,7 +61,6 @@ const tailwindConfigStr = `
 `;
 
 (async () => {
-  const nuxtConfigPath = fs.existsSync('nuxt.config.js') ? 'nuxt.config.js' : 'nuxt.config.ts';
   let nuxtConfigContent = fs.readFileSync(nuxtConfigPath, 'utf-8');
 
   if (nuxtConfigContent.includes('"tailwindcss"')) {
@@ -92,7 +103,7 @@ const tailwindConfigStr = `
   } else {
     const insertPosition =
       nuxtConfigContent.indexOf('defineNuxtConfig({') + 'defineNuxtConfig({'.length;
-    nuxtConfigContent =
+      nuxtConfigContent =
       nuxtConfigContent.slice(0, insertPosition) +
       '\n' +
       tailwindConfigStr +
