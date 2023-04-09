@@ -5,3 +5,6 @@
 A themable component library and Design System template for Nuxt. 
 
 Documentation can be found on the [wiki](../../wiki).
+
+## Features
+- Tooling for producing color palette and design tokens
