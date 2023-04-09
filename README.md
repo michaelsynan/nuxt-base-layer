@@ -4,14 +4,10 @@
 **Documentation for now will live at the [wiki](../../wiki)**
 # Nuxt 3 Base Layer 🌈
 A themable component library for Nuxt.
-<br />
 
 ### ⚠️ **This repo is still very much under development** ⚠️ 
 
-<br />
-
-Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo ✨
-> Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers). Uses nuxt.config extends key.
+Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo.
 
 ## To-do
 - [x] Create theme in `tailwind.config.js`
