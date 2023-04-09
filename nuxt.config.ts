@@ -3,37 +3,37 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 
 export default defineNuxtConfig({
+
+  "tailwindcss": {
+    "config": {
+      "theme": {
+        "extend": {
+          "colors": {
+  "primary": {
+    "light": "#b185ff",
+    "DEFAULT": "#7b57ed",
+    "dark": "#432bba"
+  },
+  "secondary": {
+    "light": "#ffac84",
+    "DEFAULT": "#ed7b57",
+    "dark": "#b64c2c"
+  },
+  "tertiary": {
+    "light": "#90ffac",
+    "DEFAULT": "#57ed7b",
+    "dark": "#00b94c"
+  }
+}
+        }
+      }
+    }
+  },
+
   modules: [
     "@nuxtjs/tailwindcss",
     ['unplugin-icons/nuxt', { autoInstall: true }]
   ],
-                                                                tailwindcss: {
-  config: {
-    theme: {
-      extend: {
-        colors: {
-          primary: {
-            DEFAULT: "#3B82F6"
-          },
-          secondary: {
-            DEFAULT: "#9CA3AF"
-          },
-          tertiary: {
-            DEFAULT: "#10B981"
-          },
-          dark: {
-            DEFAULT: "#F3F4F6"
-          },
-          light: {
-            DEFAULT: "#6B7280"
-          }
-        }
-      }
-    }
-  }
-}
-
-,
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [

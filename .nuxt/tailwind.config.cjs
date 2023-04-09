@@ -293,19 +293,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       },
       "auto": "auto"
     },
@@ -701,19 +701,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "backgroundImage": {
@@ -1064,19 +1064,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       },
       "DEFAULT": "#e5e7eb"
     },
@@ -1455,19 +1455,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "brightness": {
@@ -1776,19 +1776,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "colors": {
@@ -2084,19 +2084,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "columns": {
@@ -2471,19 +2471,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       },
       "DEFAULT": "#e5e7eb"
     },
@@ -2826,19 +2826,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "flex": {
@@ -3377,19 +3377,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "gradientColorStopPositions": {
@@ -4175,19 +4175,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "outlineOffset": {
@@ -4534,19 +4534,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "placeholderOpacity": {
@@ -4860,19 +4860,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "ringOffsetColor": {
@@ -5168,19 +5168,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "ringOffsetWidth": {
@@ -5707,19 +5707,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "strokeWidth": {
@@ -6022,19 +6022,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "textDecorationColor": {
@@ -6330,19 +6330,19 @@ module.exports = {
         "950": "#4c0519"
       },
       "primary": {
-        "DEFAULT": "#3B82F6"
+        "light": "#b185ff",
+        "DEFAULT": "#7b57ed",
+        "dark": "#432bba"
       },
       "secondary": {
-        "DEFAULT": "#9CA3AF"
+        "light": "#ffac84",
+        "DEFAULT": "#ed7b57",
+        "dark": "#b64c2c"
       },
       "tertiary": {
-        "DEFAULT": "#10B981"
-      },
-      "dark": {
-        "DEFAULT": "#F3F4F6"
-      },
-      "light": {
-        "DEFAULT": "#6B7280"
+        "light": "#90ffac",
+        "DEFAULT": "#57ed7b",
+        "dark": "#00b94c"
       }
     },
     "textDecorationThickness": {
