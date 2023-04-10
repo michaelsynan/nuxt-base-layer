@@ -1,5 +1,5 @@
 <template>
-  <nav id="navbar" :class="['w-full', 'text-white', 'py-4', 'px-4', 'md:px-20', bgColorClass]">
+  <nav id="navbar" :class="['w-full', 'text-white', 'py-2', 'px-4', 'md:px-20', bgColorClass]">
     <div class="container mx-auto flex flex-wrap justify-between items-center">
       <div class="h-full md:w-auto text-left text-sm items-center">
         <img v-if="logoImage" :src="logoImage" :alt="logoText" class="h-8 md:h-12">

@@ -1,9 +1,9 @@
 <template>
   <div class="relative inline-block">
-    <button @click="toggleDropdown" class="bg-blue-500 text-white flex items-center px-4 py-2">
+    <button @click="toggleDropdown" class="bg-primary text-white flex items-center px-4 py-2">
       Dropdown
       <span class="ml-2">
-        <i-mdi-chevron-up :class="isOpen ? 'rotate-180' : 'rotate-0'" class="fas fa-chevron-down" />
+        <i-mdi-chevron-down :class="isOpen ? 'rotate-180' : 'rotate-0'" class="fas fa-chevron-down" />
       </span>
     </button>
     <div

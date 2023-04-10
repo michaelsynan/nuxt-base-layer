@@ -3,7 +3,7 @@
     <button @click="toggleDropdown" class="text-black flex items-center">
       Link
       <span class="ml-1">
-        <i-mdi-chevron-up :class="isOpen ? 'rotate-180' : 'rotate-0'" class="fas fa-chevron-down" />
+        <i-mdi-chevron-down :class="isOpen ? 'rotate-180' : 'rotate-0'" class="fas fa-chevron-down" />
       </span>
     </button>
     <div

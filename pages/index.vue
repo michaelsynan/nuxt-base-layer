@@ -1,3 +1,6 @@
+
+import FixedSlides from '~~/components/fixedSlides.vue';
+
 <template>
   <div class="m-20 space-y-4">
     <h3>Buttons</h3>
@@ -23,8 +26,15 @@
     <baseTag />
     <h3>Tag Groups</h3>
     <baseTagGroup />
+    <h3>Dropdowns</h3>
+    <baseDropdown />
+    <menuDropdown />
     <h3>Inputs</h3>
     <baseInput label="Input Label" placeholder="enter email"/>
     <baseInputBtn />
+    <h3>Heros</h3>
+    <baseHero imageSrc="birds.jpg" header="Lets Make It Happen" body="This is the body text" />
+    <baseHeroAlt />
+    <teamMembers />
   </div>
 </template>
