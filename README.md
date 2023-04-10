@@ -7,6 +7,29 @@ A themable component library and Design System template for Nuxt.
 Documentation can be found on the [wiki](../../wiki).
 
 ## Features
-- Tooling for producing color palette using [Chroma.js](https://github.com/gka/chroma.js)
-- Design token file generation
-- Responsive font size classes in [/assets/css/main.css](/assets/css/main.css)
+- Color palette tooling with [Chroma.js](https://github.com/gka/chroma.js)
+- Design Token file generation
+- Default responsive font size classes 
+
+## Usage
+Install and run developmenet sever:
+```
+npm install 
+npm run dev
+```
+
+Generate color palette and add to ```nuxt.config.ts```:
+```
+node ./config/generateColors.js  
+node ./config/addColors.js
+```
+
+Safelist custom classes in ```tailwind.config.js```:
+```
+  safelist: [
+    {pattern: /(border|bg|text)-(primary|secondary|tertiary)/,
+    variants: ['hover', 'focus', 'active', 'disabled']},
+    {pattern: /(border|bg|text)-(primary|secondary|tertiary)-(light|dark)/,
+    variants: ['hover', 'focus', 'active', 'disabled']},
+]
+```
