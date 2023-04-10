@@ -7,6 +7,7 @@ A themable component library and Design System template for Nuxt.
 Documentation can be found on the [wiki](../../wiki).
 
 ## Features
+- Component library
 - Color palette tooling with [Chroma.js](https://github.com/gka/chroma.js)
 - Design Token file generation
 - Default responsive font size CSS classes
