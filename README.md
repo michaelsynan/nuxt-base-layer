@@ -11,18 +11,20 @@ Documentation can be found on the [wiki](../../wiki).
 - Design Token file generation
 - Default responsive font size classes 
 
-## Usage
+## Quickstart
 Install and run developmenet sever:
 ```
 npm install 
 npm run dev
 ```
+<br />
 
 Generate color palette and add to ```nuxt.config.ts```:
 ```
 node ./config/generateColors.js  
 node ./config/addColors.js
 ```
+<br />
 
 Safelist custom classes in ```tailwind.config.js```:
 ```
@@ -33,3 +35,18 @@ Safelist custom classes in ```tailwind.config.js```:
     variants: ['hover', 'focus', 'active', 'disabled']},
   ],
 ```
+
+The Color Palette generator uses Chroma.js to create the following colors for your theme:
+- Primary 
+- Primary light
+- Primary dark
+- Secondary
+- Secondary light
+- Secondary dark
+- Tertiary 
+- Tertiary light
+- Tertiary dark
+
+These colors are then inserted into `nuxt.config.ts` using `addColors.js`. 
+
+You can now use primary, secondary, and tertiary colors with your TailwindCSS utility classes. 🎉
