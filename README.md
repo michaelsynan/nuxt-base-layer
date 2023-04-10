@@ -49,4 +49,5 @@ The Color Palette generator uses Chroma.js to create the following colors for yo
 
 These colors are then inserted into `nuxt.config.ts` using `addColors.js`. 
 
+
 You can now use primary, secondary, and tertiary colors with your TailwindCSS utility classes. 🎉
