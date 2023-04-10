@@ -31,5 +31,5 @@ Safelist custom classes in ```tailwind.config.js```:
     variants: ['hover', 'focus', 'active', 'disabled']},
     {pattern: /(border|bg|text)-(primary|secondary|tertiary)-(light|dark)/,
     variants: ['hover', 'focus', 'active', 'disabled']},
-]
+  ],
 ```
