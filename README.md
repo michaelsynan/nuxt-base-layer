@@ -1,27 +1,12 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/michaelsynan/nuxt-base-layer)
 ![License: MOZ 2.0](https://img.shields.io/badge/license-MLP%202.0-green)
 
-**Documentation for now will live at the [wiki](/wiki)**
 # Nuxt 3 Base Layer 🌈
-A themable component library for Nuxt.
-<br />
+A themable component library and Design System template for Nuxt. 
 
-### ⚠️ **This repo is still very much under development** ⚠️ 
+Documentation can be found on the [wiki](../../wiki).
 
-<br />
-
-Created for use with the [Nuxt-Tailwind-Template](https://github.com/michaelsynan/Nuxt-Tailwind-Template) repo ✨
-> Read about Nuxt 3 layers [here](https://nuxt.com/docs/getting-started/layers). Uses nuxt.config extends key.
-
-## Usage
-
-1. Clone repo
-2. Add to parent repo extends key
-3. Customize and use components in `/components` directory in your parent project. 
-
-## To-do
-- [x] Create theme in `tailwind.config.js`
-- [ ] Use https://vue-styleguidist.github.io/
-- [ ] Add default styles to Tailwind `@layer base`
-- [ ] Clean up components
-- [ ] Document available props
+## Features
+- Tooling for producing color palette using [Chroma.js](https://github.com/gka/chroma.js)
+- Design token file generation
+- Responsive font size classes in [/assets/css/main.css](/assets/css/main.css)
