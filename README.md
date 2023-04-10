@@ -9,7 +9,7 @@ Documentation can be found on the [wiki](../../wiki).
 ## Features
 - Color palette tooling with [Chroma.js](https://github.com/gka/chroma.js)
 - Design Token file generation
-- Default responsive font size classes 
+- Default responsive font size CSS classes
 
 ## Quickstart
 Install and run developmenet sever:
