@@ -33,11 +33,11 @@ export default {
     bgClass() {
       switch (this.type) {
         case 'warn':
-          return 'bg-yellow-300';
+          return 'bg-yellow-400';
         case 'error':
-          return 'bg-red-300';
+          return 'bg-red-400';
         case 'success':
-          return 'bg-green-300';
+          return 'bg-green-400';
         default:
           return 'bg-gray-300';
       }

@@ -3,6 +3,7 @@ import FixedSlides from '~~/components/fixedSlides.vue';
 
 <template>
   <div class="m-20 space-y-4">
+    <generate />
     <h3>Buttons</h3>
     <div class="flex space-x-4">
       <baseBtn color="primary">Test Button</baseBtn>
@@ -16,6 +17,9 @@ import FixedSlides from '~~/components/fixedSlides.vue';
     </div>
     <h3>Navigation Bars</h3>
     <baseNav color="primary" />
+    <baseSearch />
+    <baseSearchAlt />
+    
     <h3>Footers</h3>
     <baseFooter color="tertiary" />
     <h3>Toasts</h3>
