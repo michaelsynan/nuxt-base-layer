@@ -1,4 +1,4 @@
-{
+const client_manifest = {
   "_nuxt-link.c23c2dd0.js": {
     "resourceType": "script",
     "module": true,
@@ -107,4 +107,7 @@
     "isDynamicEntry": true,
     "src": "virtual:nuxt:/home/mikey/git/baselayer/.nuxt/error-component.mjs"
   }
-}
+};
+
+export { client_manifest as default };
+//# sourceMappingURL=client.manifest.mjs.map

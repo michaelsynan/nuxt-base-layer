@@ -1,16 +1,25 @@
-import { reactive, getCurrentInstance, version, unref, inject, ref, watchEffect, watch, toRef, isRef, nextTick, shallowRef, computed, isReadonly, h, defineComponent, Suspense, Transition, provide, useSSRContext, onErrorCaptured, onServerPrefetch, defineAsyncComponent, createApp } from "vue";
-import { $fetch } from "ofetch";
-import { useRuntimeConfig as useRuntimeConfig$1 } from "#internal/nitro";
-import { createHooks } from "hookable";
-import { getContext, executeAsync } from "unctx";
-import { renderSSRHead } from "@unhead/ssr";
-import { createServerHead as createServerHead$1, getActiveHead } from "unhead";
-import { defineHeadPlugin } from "@unhead/shared";
-import { createMemoryHistory, createRouter, RouterView } from "vue-router";
-import { setResponseStatus as setResponseStatus$1, sendRedirect, createError as createError$1 } from "h3";
-import { hasProtocol, parseURL, joinURL, isEqual } from "ufo";
-import { ssrRenderComponent, ssrRenderSuspense } from "vue/server-renderer";
-import { defu } from "defu";
+import { version, getCurrentInstance, inject, ref, watchEffect, watch, useSSRContext, createApp, reactive, unref, provide, onErrorCaptured, onServerPrefetch, toRef, shallowRef, computed, isReadonly, defineAsyncComponent, isRef, nextTick, defineComponent, h, Suspense, Transition } from 'file:///home/mikey/git/baselayer/node_modules/vue/index.mjs';
+import { $fetch } from 'file:///home/mikey/git/baselayer/node_modules/ofetch/dist/node.mjs';
+import { createHooks } from 'file:///home/mikey/git/baselayer/node_modules/hookable/dist/index.mjs';
+import { getContext, executeAsync } from 'file:///home/mikey/git/baselayer/node_modules/unctx/dist/index.mjs';
+import { renderSSRHead } from 'file:///home/mikey/git/baselayer/node_modules/@unhead/ssr/dist/index.mjs';
+import { getActiveHead, createServerHead as createServerHead$1 } from 'file:///home/mikey/git/baselayer/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///home/mikey/git/baselayer/node_modules/@unhead/shared/dist/index.mjs';
+import { createMemoryHistory, createRouter, RouterView } from 'file:///home/mikey/git/baselayer/node_modules/vue-router/dist/vue-router.node.mjs';
+import { sendRedirect, createError as createError$1, setResponseStatus as setResponseStatus$1 } from 'file:///home/mikey/git/baselayer/node_modules/h3/dist/index.mjs';
+import { hasProtocol, parseURL, joinURL, isEqual } from 'file:///home/mikey/git/baselayer/node_modules/ufo/dist/index.mjs';
+import { ssrRenderSuspense, ssrRenderComponent } from 'file:///home/mikey/git/baselayer/node_modules/vue/server-renderer/index.mjs';
+import { defu } from 'file:///home/mikey/git/baselayer/node_modules/defu/dist/defu.mjs';
+import { a as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/destr/dist/index.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/scule/dist/index.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/ohash/dist/index.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/unstorage/dist/index.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///home/mikey/git/baselayer/node_modules/radix3/dist/index.mjs';
+
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
 const nuxtAppCtx = /* @__PURE__ */ getContext("nuxt-app");
@@ -165,8 +174,6 @@ function useRuntimeConfig() {
 function defineGetter(obj, key, val) {
   Object.defineProperty(obj, key, { get: () => val });
 }
-const tailwind = "";
-const main = "";
 const components = {};
 const components_plugin_KR1HBZs4kY = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
   for (const name in components) {
@@ -417,7 +424,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-ec454195.js").then((m) => m.default || m)
+    component: () => import('./_nuxt/index-ec454195.mjs').then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -769,8 +776,8 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = /* @__PURE__ */ defineAsyncComponent(() => import("./_nuxt/error-component-6a30f526.js").then((r) => r.default || r));
-    const IslandRenderer = /* @__PURE__ */ defineAsyncComponent(() => import("./_nuxt/island-renderer-3e5fa62b.js").then((r) => r.default || r));
+    const ErrorComponent = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/error-component-6a30f526.mjs').then((r) => r.default || r));
+    const IslandRenderer = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/island-renderer-3e5fa62b.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());
@@ -829,12 +836,6 @@ const plugins = normalizePlugins(_plugins);
   };
 }
 const entry$1 = (ctx) => entry(ctx);
-export {
-  _export_sfc as _,
-  useRouter as a,
-  createError as c,
-  entry$1 as default,
-  navigateTo as n,
-  useHead as u
-};
+
+export { _export_sfc as _, useRouter as a, createError as c, entry$1 as default, navigateTo as n, useHead as u };
 //# sourceMappingURL=server.mjs.map
