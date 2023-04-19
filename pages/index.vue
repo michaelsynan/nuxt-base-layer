@@ -10,6 +10,9 @@ import FixedSlides from '~~/components/fixedSlides.vue';
       <baseBtn color="secondary">Test Button</baseBtn>
       <baseBtn color="tertiary">Test Button</baseBtn>
     </div>
+    <toolTipdemo location="top" message="This is a tooltip!">
+     <span></span>
+    </toolTipdemo>
     <div class="flex space-x-4">
       <baseBtn color="primary" type="ghost">Test Button</baseBtn>
       <baseBtn color="secondary" type="ghost">Test Button</baseBtn>
