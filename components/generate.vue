@@ -5,8 +5,8 @@
   <div>
     <button class="btn" @click="generateColors">Generate Colors</button>
   </div>
-  <div>
-    <themeScheme /> test test
+  <div class="min-w-max">
+    <themeScheme />
   </div>
   <div>
     <baseDropdown :dropdownItems="items">Number of Base Colors</baseDropdown>
@@ -37,9 +37,12 @@
           <p class="color-name" :style="{ color: textColor(color.hex) }">{{ color.name }}</p>
           <p class="color-hex" :style="{ color: textColor(color.hex) }">{{ color.hex }}</p>
         </div>
-        <i-mdi-lock-open :class="isOpen ? 'rotate-180' : 'rotate-0'" class="fas fa-chevron-down" />
+        <div class="absolute z-50">
+          <i-mdi-lock-open v-if="!lockStatus" @click="toggleLockStatus" :key="'open'" />
+  <i-mdi-lock v-else @click="toggleLockStatus" :key="'locked'" />
+</div>
 
-      </div>
+</div>
     </div>
   </div>
 </template>
@@ -50,8 +53,17 @@ import chroma from 'chroma-js';
 import { randomHexColor, generateShades } from '~/utils/colorUtils';
 
 const colors = ref([]);
-
+const lockStatus = ref(true);
 const items = ref(['squiggle', 'pickle', 'rick'])
+
+// toggle color lock status
+
+const toggleLockStatus = () => {
+  lockStatus.value = !lockStatus.value;
+  console.log("lockStatus.value", lockStatus.value);
+};
+
+
 
 function generateColors() {
   // Generate a random base color
@@ -78,7 +90,7 @@ function generateColors() {
 
 
   // Update the colors array
-  colors.value = Object.values(palette);
+  colors.value = Object.values(palette).map(color => ({ ...color, locked: false }));
 }
 
 generateColors();

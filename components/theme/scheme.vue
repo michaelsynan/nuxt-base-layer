@@ -1,6 +1,6 @@
 <!-- components/ColorSchemeDropdown.vue -->
 <template>
-  <select class="color-scheme-dropdown p-2 bg-black rounded m-2 fixed" @change="onChange($event)">
+  <select class="color-scheme-dropdown p-2 bg-primary text-white rounded m-2" @change="onChange($event)">
     <option
       v-for="(scheme, index) in colorSchemes"
       :key="index"
