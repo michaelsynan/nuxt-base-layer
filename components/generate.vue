@@ -25,25 +25,23 @@
 
 
     
-
-    <div class="color-palette px-10 py-4">
-      <div
-        v-for="(color, index) in colors"
-        :key="index"
-        class="color-swatch flex"
-        :style="{ backgroundColor: color.hex }"
-      >
-        <div class="color-label">
-          <p class="color-name" :style="{ color: textColor(color.hex) }">{{ color.name }}</p>
-          <p class="color-hex" :style="{ color: textColor(color.hex) }">{{ color.hex }}</p>
-        </div>
-        <div class="absolute z-50">
-          <i-mdi-lock-open v-if="!lockStatus" @click="toggleLockStatus" :key="'open'" />
-  <i-mdi-lock v-else @click="toggleLockStatus" :key="'locked'" />
-</div>
-
-</div>
+<div class="color-palette px-10 py-4">
+    <div
+      v-for="(color, index) in colors"
+      :key="index"
+      class="color-swatch flex"
+      :style="{ backgroundColor: color.hex }"
+    >
+      <div class="color-label">
+        <p class="color-name" :style="{ color: textColor(color.hex) }">{{ color.name }}</p>
+        <p class="color-hex" :style="{ color: textColor(color.hex) }">{{ color.hex }}</p>
+      </div>
+      <div class="absolute z-50">
+        <i-mdi-lock-open v-if="!color.locked" @click="toggleColorLockStatus(color)" :key="'open'" />
+        <i-mdi-lock v-else @click="toggleColorLockStatus(color)" :key="'locked'" />
+      </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -58,12 +56,11 @@ const items = ref(['squiggle', 'pickle', 'rick'])
 
 // toggle color lock status
 
-const toggleLockStatus = () => {
-  lockStatus.value = !lockStatus.value;
-  console.log("lockStatus.value", lockStatus.value);
+// toggle color lock status
+const toggleColorLockStatus = (color) => {
+  color.locked = !color.locked;
+  console.log("Color locked:", color.locked);
 };
-
-
 
 function generateColors() {
   // Generate a random base color
