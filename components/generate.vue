@@ -1,8 +1,32 @@
 <template>
   <div class="w-full bg-black">
-    <h2 class="text-white p-4">Pick Colors</h2>
+    <h2 class="text-white p-4 bg-slate-900">Pick Colors</h2>
+    <div class="flex flex-wrap gap-x-2 bg-stone-800 p-2 items-end">
+  <div>
     <button class="btn" @click="generateColors">Generate Colors</button>
-    <div class="color-palette">
+  </div>
+  <div>
+    <themeScheme /> test test
+  </div>
+  <div>
+    <baseDropdown :dropdownItems="items">Number of Base Colors</baseDropdown>
+  </div>
+  <div>
+    <baseDropdown :dropdownItems="items">Number of Shades</baseDropdown>
+  </div>
+  <div class="flex flex-col">
+    <label class="text-white" for="saturation-input">Saturation</label>
+    <input type="number" value="50" id="saturation-input" class="w-16 px-1 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-400 focus:border-blue-400 text-center" />
+  </div>
+  <div class="flex items-end ml-auto">
+    <button class="btn-add-to-theme" @click="addToTheme">Add to Theme</button>
+  </div>
+</div>
+
+
+    
+
+    <div class="color-palette px-10 py-4">
       <div
         v-for="(color, index) in colors"
         :key="index"
@@ -13,9 +37,10 @@
           <p class="color-name" :style="{ color: textColor(color.hex) }">{{ color.name }}</p>
           <p class="color-hex" :style="{ color: textColor(color.hex) }">{{ color.hex }}</p>
         </div>
+        <i-mdi-lock-open :class="isOpen ? 'rotate-180' : 'rotate-0'" class="fas fa-chevron-down" />
+
       </div>
     </div>
-    <button class="btn-add-to-theme align-start" @click="addToTheme">Add to Theme</button>
   </div>
 </template>
 
@@ -25,6 +50,8 @@ import chroma from 'chroma-js';
 import { randomHexColor, generateShades } from '~/utils/colorUtils';
 
 const colors = ref([]);
+
+const items = ref(['squiggle', 'pickle', 'rick'])
 
 function generateColors() {
   // Generate a random base color

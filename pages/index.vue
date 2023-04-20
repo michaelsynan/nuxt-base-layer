@@ -1,23 +1,45 @@
-
-import FixedSlides from '~~/components/fixedSlides.vue';
-
 <template>
   <div class="m-20 space-y-4">
     <generate />
     <h3>Buttons</h3>
     <div class="flex space-x-4">
+      <baseBtn color="primary" size="large">Test Button</baseBtn>
+      <baseBtn color="secondary" size="large">Test Button</baseBtn>
+      <baseBtn color="tertiary" size="large">Test Button</baseBtn>
+    </div>
+    <div class="flex space-x-4">
+      <baseBtn color="primary" type="ghost" size="large">Test Button</baseBtn>
+      <baseBtn color="secondary" type="ghost" size="large">Test Button</baseBtn>
+      <baseBtn color="tertiary" type="ghost" size="large">Test Button</baseBtn>
+    </div>
+
+    <div class="flex space-x-4">
       <baseBtn color="primary">Test Button</baseBtn>
       <baseBtn color="secondary">Test Button</baseBtn>
       <baseBtn color="tertiary">Test Button</baseBtn>
     </div>
-    <toolTipdemo location="top" message="This is a tooltip!">
-     <span></span>
-    </toolTipdemo>
     <div class="flex space-x-4">
       <baseBtn color="primary" type="ghost">Test Button</baseBtn>
       <baseBtn color="secondary" type="ghost">Test Button</baseBtn>
       <baseBtn color="tertiary" type="ghost">Test Button</baseBtn>
     </div>
+    <div class="flex space-x-4">
+      <baseBtn color="primary" size="small">Test Button</baseBtn>
+      <baseBtn color="secondary" size="small">Test Button</baseBtn>
+      <baseBtn color="tertiary" size="small">Test Button</baseBtn>
+    </div>
+
+    <div class="flex space-x-4">
+      <baseBtn color="primary" type="ghost" size="small">Test Button</baseBtn>
+      <baseBtn color="secondary" type="ghost" size="small">Test Button</baseBtn>
+      <baseBtn color="tertiary" type="ghost" size="small">Test Button</baseBtn>
+    </div>
+<div class="m-10 pt-10 pl-4">
+    <toolTipdemo location="top" message="This is a tooltip!">
+     <span></span>
+    </toolTipdemo>
+    </div>
+
     <h3>Navigation Bars</h3>
     <baseNav color="primary" />
     <baseSearch />
@@ -45,3 +67,4 @@ import FixedSlides from '~~/components/fixedSlides.vue';
     <teamMembers />
   </div>
 </template>
+

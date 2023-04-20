@@ -12,7 +12,7 @@
       @click.away="closeDropdown"
     >
       <ul class="py-0">
-        <li v-for="(item, index) in items" :key="index" class="cursor-pointer bg-white">
+        <li v-for="(item, index) in dropdownItems" :key="index" class="cursor-pointer bg-white">
           <a
             @click="selectItem(item)"
             class="block px-4 py-2 hover:bg-gray-200"
@@ -28,10 +28,16 @@
 
 <script>
 export default {
+  props: {
+    dropdownItems: {
+      type: Array,
+      required: true,
+      default: () => [],
+    },
+  },
   data() {
     return {
       isOpen: false,
-      items: ['Item 1', 'Item 2', 'Item 3'],
     };
   },
   methods: {

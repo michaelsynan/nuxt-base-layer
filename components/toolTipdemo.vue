@@ -11,9 +11,9 @@
         'absolute top-1/2 left-full transform -translate-y-1/2': location === 'right',
         'absolute top-1/2 right-full transform -translate-y-1/2': location === 'left'
       }"
-      class="tooltip-container px-2 py-1 text-white bg-gray-900 rounded-lg shadow-lg m-4"
+      class="tooltip-container px-2.5 py-2 text-white bg-gray-900 rounded-lg shadow-lg m-4"
     >
-      <div>{{ message }}</div>
+      <div class="min-w-max max-w-sm">{{ message }}</div>
       <div
         class="tooltip-triangle"
         :class="{
@@ -58,16 +58,16 @@ export default {
 
 .triangle-top {
   top: -10px;
-  left: 50%;
-  margin-left: -10px;
+  left: 30%;
+  margin-left: -9px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #333;
 }
 
 .triangle-bottom {
-  bottom: -10px;
-  left: 50%;
+  bottom: -9px;
+  left: 30%;
   margin-left: -10px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -75,7 +75,7 @@ export default {
 }
 
 .triangle-right {
-  left: -10px;
+  left: -9px;
   top: 50%;
   margin-top: -10px;
   border-top: 10px solid transparent;
@@ -84,7 +84,7 @@ export default {
 }
 
 .triangle-left {
-  right: -10px;
+  right: -9px;
   top: 50%;
   margin-top: -10px;
   border-top: 10px solid transparent;

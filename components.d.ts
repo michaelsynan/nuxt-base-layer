@@ -15,6 +15,8 @@ declare module '@vue/runtime-core' {
     IMdiGithub: typeof import('~icons/mdi/github')['default']
     IMdiInstagram: typeof import('~icons/mdi/instagram')['default']
     IMdiLinkedin: typeof import('~icons/mdi/linkedin')['default']
+    IMdiLock: typeof import('~icons/mdi/lock')['default']
+    IMdiLockOpen: typeof import('~icons/mdi/lock-open')['default']
     IMdiMagnify: typeof import('~icons/mdi/magnify')['default']
     IMdiMenu: typeof import('~icons/mdi/menu')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
