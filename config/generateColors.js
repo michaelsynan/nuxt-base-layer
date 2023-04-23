@@ -1,53 +1,94 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+// generateColors.js
 import chroma from 'chroma-js';
-import yaml from 'js-yaml';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const numBaseColors = 3;
+const numShades = 1;
+const colorScheme = 'triadic';
+const namingConvention = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
 
-// Function to generate a random hex color
 function randomHexColor() {
   const hex = Math.floor(Math.random() * 16777215).toString(16);
   return "#" + hex.padStart(6, '0');
 }
 
-// Function to generate light and dark variations of a color
-function generateShades(color) {
-  const light = chroma(color).brighten(1).hex();
-  const dark = chroma(color).darken(1).hex();
-  return { light, dark };
+function generateShades(color, numShades) {
+  const shades = [];
+  const increment = 1 / numShades;
+
+  for (let i = 1; i <= numShades; i++) {
+    const light = chroma(color).brighten(i * increment).hex();
+    const dark = chroma(color).darken(i * increment).hex();
+    shades.push({ light, dark });
+  }
+
+  return shades;
 }
 
-// Allow user to provide base color or pick a random color
-const baseColor = process.argv[2] || randomHexColor();
+function generateBaseColors(colorScheme, numBaseColors) {
+  const baseColor = randomHexColor();
+  const baseColors = [baseColor];
 
-const primary = baseColor;
-const secondary = chroma(primary).set('hsl.h', '+120').hex();
-const tertiary = chroma(primary).set('hsl.h', '-120').hex();
+  const scale = chroma.scale([baseColor]).mode('hsl');
+  const angle = 360 / numBaseColors;
 
-const primaryShades = generateShades(primary);
-const secondaryShades = generateShades(secondary);
-const tertiaryShades = generateShades(tertiary);
+  switch (colorScheme) {
+    case 'triadic':
+    case 'complementary':
+    case 'splitComplementary':
+    case 'analogous':
+    case 'square':
+    case 'tetradic':
+      for (let i = 1; i < numBaseColors; i++) {
+        baseColors.push(chroma(baseColor).set('hsl.h', `+${angle * i}`).hex());
+      }
+      break;
+    default:
+      console.log(`Color scheme ${colorScheme} not supported. Using the default 'triadic' scheme.`);
+      for (let i = 1; i < numBaseColors; i++) {
+        baseColors.push(chroma(baseColor).set('hsl.h', `+${angle * i}`).hex());
+      }
+      break;
+  }
 
-// Create a design token object
-const designTokens = {
-  primary: primary,
-  primary_light: primaryShades.light,
-  primary_dark: primaryShades.dark,
-  secondary: secondary,
-  secondary_light: secondaryShades.light,
-  secondary_dark: secondaryShades.dark,
-  tertiary: tertiary,
-  tertiary_light: tertiaryShades.light,
-  tertiary_dark: tertiaryShades.dark,
-};
+  return baseColors;
+}
 
-// Convert the design token object to YAML and save to a file
-const yamlString = yaml.dump(designTokens);
-const parentDir = path.resolve(__dirname, '..');
-const outputFile = path.join(parentDir, 'design_tokens.yaml');
-fs.writeFileSync(outputFile, yamlString);
+export function generateColors(numBaseColors, numShades, colorScheme) {
+  const baseColors = generateBaseColors(colorScheme, numBaseColors);
+  const colorShades = baseColors.map(color => generateShades(color, numShades));
 
-console.log(`Design tokens saved to ${outputFile}`);
+  const orderedTokens = baseColors.reduce((tokens, color, index) => {
+    const prefix = index === 0 ? 'primary' :
+                   index === 1 ? 'secondary' :
+                   index === 2 ? 'tertiary' : `color${index + 1}`;
+
+    colorShades[index].forEach((shades, shadeIndex) => {
+      if (shadeIndex < numShades) {
+        tokens[`${prefix}-${namingConvention[5 - (shadeIndex + 1)]}`] = shades.light;
+      }
+      tokens[`${prefix}-${namingConvention[5]}`] = color;
+      tokens[`${prefix}-${namingConvention[shadeIndex + 6]}`] =
+      shades.dark;
+    });
+
+    return tokens;
+  }, {});
+
+  const orderedOutput = Object.entries(orderedTokens).sort((a, b) => {
+    const prefixOrder = ['primary', 'secondary', 'tertiary', 'color4', 'color5'];
+    const aPrefix = a[0].split('-')[0];
+    const bPrefix = b[0].split('-')[0];
+    const aNum = parseInt(a[0].split('-')[1]);
+    const bNum = parseInt(b[0].split('-')[1]);
+    if (aPrefix === bPrefix) {
+      return aNum - bNum;
+    } else {
+      return prefixOrder.indexOf(aPrefix) - prefixOrder.indexOf(bPrefix);
+    }
+  }).reduce((acc, [key, value]) => {
+    acc[key] = value;
+    return acc;
+  }, {});
+
+  return orderedOutput;
+}

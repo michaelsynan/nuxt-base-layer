@@ -21,6 +21,7 @@
   "dependencies": {
     "chroma-js": "^2.4.2",
     "js-yaml": "^4.1.0",
-    "unplugin-vue-components": "^0.24.1"
+    "unplugin-vue-components": "^0.24.1",
+    "yaml": "^2.2.1"
   }
 }

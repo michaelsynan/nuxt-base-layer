@@ -9,14 +9,14 @@
     <themeScheme />
   </div>
   <div>
-    <baseDropdown :dropdownItems="items">Number of Base Colors</baseDropdown>
+    <baseDropdown :dropdownItems="numBaseColor" @dropdown-item-selected="updateNumBaseColor">Number of Base Colors</baseDropdown>
   </div>
   <div>
-    <baseDropdown :dropdownItems="items">Number of Shades</baseDropdown>
+    <baseDropdown :dropdownItems="numShades" @dropdown-item-selected="updateNumShades">Number of Shades</baseDropdown>
   </div>
   <div class="flex flex-col">
     <label class="text-white" for="saturation-input">Saturation</label>
-    <input type="number" value="50" id="saturation-input" class="w-16 px-1 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-400 focus:border-blue-400 text-center" />
+    <input type="number" :value="saturationValue" id="saturation-input" class="w-16 px-1 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-400 focus:border-blue-400 text-center" />
   </div>
   <div class="flex items-end ml-auto">
     <button class="btn-add-to-theme" @click="addToTheme">Add to Theme</button>
@@ -24,10 +24,9 @@
 </div>
 
 
-    
 <div class="color-palette px-10 py-4">
     <div
-      v-for="(color, index) in colors"
+      v-for="(color, index) in selectedColors"
       :key="index"
       class="color-swatch flex"
       :style="{ backgroundColor: color.hex }"
@@ -37,8 +36,8 @@
         <p class="color-hex" :style="{ color: textColor(color.hex) }">{{ color.hex }}</p>
       </div>
       <div class="absolute z-50">
-        <i-mdi-lock-open v-if="!color.locked" @click="toggleColorLockStatus(color)" :key="'open'" />
-        <i-mdi-lock v-else @click="toggleColorLockStatus(color)" :key="'locked'" />
+        <i-mdi-lock-open v-if="!color.locked" @click="toggleColorLockStatus(color)" :key="'open'" :style="{ color: textColor(color.hex) }" />
+        <i-mdi-lock v-else @click="toggleColorLockStatus(color)" :key="'locked'" :style="{ color: textColor(color.hex) }" />
       </div>
     </div>
   </div>
@@ -46,49 +45,48 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+
+import { computed, ref } from 'vue';
 import chroma from 'chroma-js';
 import { randomHexColor, generateShades } from '~/utils/colorUtils';
 
 const colors = ref([]);
 const lockStatus = ref(true);
-const items = ref(['squiggle', 'pickle', 'rick'])
+const numBaseColor = ref(['3', '4', '5', '6', '7']);
+const numShades = ref(['3', '4', '5', '6', '7']);
+const saturationValue = ref(0.5);
 
-// toggle color lock status
+const selectedNumBaseColor = ref(numBaseColor.value[0]);
+const selectedNumShades = ref(numShades.value[0]);
 
-// toggle color lock status
+const updateNumBaseColor = (newNumBaseColor) => {
+  selectedNumBaseColor.value = newNumBaseColor;
+  generateColors();
+};
+
+const updateNumShades = (newNumShades) => {
+  selectedNumShades.value = newNumShades;
+  generateColors();
+};
+
 const toggleColorLockStatus = (color) => {
-  color.locked = !color.locked;
   console.log("Color locked:", color.locked);
 };
 
 function generateColors() {
-  // Generate a random base color
-  const baseColor = randomHexColor();
 
-  // Generate color palette using the base color
-  const palette = {
-    primary: { name: 'primary', hex: baseColor },
-    secondary: { name: 'secondary', hex: chroma(baseColor).set('hsl.h', '+120').hex() },
-    tertiary: { name: 'tertiary', hex: chroma(baseColor).set('hsl.h', '-120').hex() },
-  };
-
-  palette.primary_light = { name: 'primary_light', hex: generateShades(palette.primary.hex).light };
-  palette.primary_dark = { name: 'primary_dark', hex: generateShades(palette.primary.hex).dark };
-  palette.secondary_light = { name: 'secondary_light', hex: generateShades(palette.secondary.hex).light };
-  palette.secondary_dark = { name: 'secondary_dark', hex: generateShades(palette.secondary.hex).dark };
-  palette.tertiary_light = { name: 'tertiary_light', hex: generateShades(palette.tertiary.hex).light };
-  palette.tertiary_dark = { name: 'tertiary_dark', hex: generateShades(palette.tertiary.hex).dark };
-
-  
-  // Add baseText_light and baseText_dark colors
-  palette.baseText_light = { name: 'baseText_light', hex: chroma.mix(palette.primary.hex, '#ffffff', 0.95).hex() };
-  palette.baseText_dark = { name: 'baseText_dark', hex: chroma.mix(palette.primary.hex, '#000000', 0.98).hex() };
-
+  // ... (previous generateColors code)
 
   // Update the colors array
   colors.value = Object.values(palette).map(color => ({ ...color, locked: false }));
 }
+
+const selectedColors = computed(() => {
+  const allColors = colors.value;
+  const endIndex = parseInt(selectedNumBaseColor.value) * (parseInt(selectedNumShades.value) + 1);
+  const selectedColorsWithShades = allColors.slice(0, endIndex);
+  return selectedColorsWithShades;
+});
 
 generateColors();
 
@@ -100,6 +98,42 @@ function textColor(hexColor) {
   return chroma(hexColor).luminance() > 0.5 ? '#000000' : '#ffffff';
 }
 </script>
+
+<!-- The style section remains the same -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style scoped>
 .color-palette {

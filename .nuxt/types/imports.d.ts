@@ -18,7 +18,7 @@ declare global {
   const definePageMeta: typeof import('../../node_modules/nuxt/dist/pages/runtime/composables')['definePageMeta']
   const effect: typeof import('vue')['effect']
   const effectScope: typeof import('vue')['effectScope']
-  const generateShades: typeof import('../../utils/colorUtils')['generateShades']
+  const generateShades: typeof import('../../utils/colorUtils2')['generateShades']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
@@ -59,7 +59,7 @@ declare global {
   const preloadRouteComponents: typeof import('../../node_modules/nuxt/dist/app')['preloadRouteComponents']
   const provide: typeof import('vue')['provide']
   const proxyRefs: typeof import('vue')['proxyRefs']
-  const randomHexColor: typeof import('../../utils/colorUtils')['randomHexColor']
+  const randomHexColor: typeof import('../../utils/colorUtils2')['randomHexColor']
   const reactive: typeof import('vue')['reactive']
   const readonly: typeof import('vue')['readonly']
   const ref: typeof import('vue')['ref']
@@ -141,7 +141,7 @@ declare module 'vue' {
     readonly definePageMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/pages/runtime/composables')['definePageMeta']>
     readonly effect: UnwrapRef<typeof import('vue')['effect']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
-    readonly generateShades: UnwrapRef<typeof import('../../utils/colorUtils')['generateShades']>
+    readonly generateShades: UnwrapRef<typeof import('../../utils/colorUtils2')['generateShades']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
@@ -182,7 +182,7 @@ declare module 'vue' {
     readonly preloadRouteComponents: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['preloadRouteComponents']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly proxyRefs: UnwrapRef<typeof import('vue')['proxyRefs']>
-    readonly randomHexColor: UnwrapRef<typeof import('../../utils/colorUtils')['randomHexColor']>
+    readonly randomHexColor: UnwrapRef<typeof import('../../utils/colorUtils2')['randomHexColor']>
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>
     readonly ref: UnwrapRef<typeof import('vue')['ref']>
