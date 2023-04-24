@@ -1,6 +1,5 @@
 <template>
   <div class="m-20 space-y-4">
-    <generate />
     <h3>Buttons</h3>
     <div class="flex space-x-4">
       <baseBtn color="primary" size="large">Test Button</baseBtn>
@@ -55,6 +54,7 @@
     <baseTag />
     <h3>Tag Groups</h3>
     <baseTagGroup />
+    <toggle />
     <h3>Dropdowns</h3>
     <baseDropdown />
     <menuDropdown />
